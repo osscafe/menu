@@ -1,19 +1,24 @@
+# Coworking
+
+- Daily - ¥1,000 *one free drink included*
+- Monthly - ¥10,800
+
 # Drinks
 
 ## Hot
 
-- Coffee (Americano)
-- Espresso
-- Black Tea
-- Puer Tea
-- Jasmine Tea
+- Coffee (Americano) - ¥500
+- Espresso - ¥500
+- Black Tea - ¥500
+- Puer Tea - ¥500
+- Jasmine Tea - ¥500
 
 ## Cold
 
-- Coke
-- Ginger Ale
-- Birelay's Orange
-- Wilkinson Tansan
+- Coke - ¥500
+- Ginger Ale - ¥500
+- Birelay's Orange - ¥500
+- Wilkinson Tansan - ¥500
 
 ## Extra
 
