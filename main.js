@@ -3195,7 +3195,7 @@ riot$1.tag2('app', '<section> <h2>Coworking</h2> <menu-item each="{data in cowor
     this.on('mount', function () { return load().then(function (data) { return this$1.update(data); }); });
 
     function load () {
-      var url = '/api/items.json';
+      var url = 'api/items.json';
       return window.fetch(url)
         .then(function (response) { return response.json(); })
         .then(function (data) { return ({
