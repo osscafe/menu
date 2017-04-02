@@ -63,7 +63,7 @@
   },
   {
     "category": "cold-drink",
-    "name": "Coke",
+    "name": "Coca-Cola",
     "description": "",
     "price": {
       "default": 500,
@@ -81,8 +81,8 @@
   },
   {
     "category": "cold-drink",
-    "name": "Birelay's Orange",
-    "description": "",
+    "name": "Orange Juice",
+    "description": "Birelay's",
     "price": {
       "default": 500,
       "dojoAdditional": 300
