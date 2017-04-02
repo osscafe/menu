@@ -25,7 +25,7 @@
     this.on('mount', () => load().then(data => this.update(data)))
 
     function load () {
-      const url = '/api/items.json'
+      const url = 'api/items.json'
       return window.fetch(url)
         .then(response => response.json())
         .then(data => ({
