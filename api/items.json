@@ -1,0 +1,133 @@
+[
+  {
+    "category": "coworking",
+    "name": "Daily",
+    "description": "one free drink included",
+    "price": {
+      "default": 1000,
+      "creditCard": 1080
+    }
+  },
+    {
+      "category": "coworking",
+      "name": "Monthly",
+      "description": "24/7 access to the library",
+      "price": {
+        "default": 10800
+      }
+    },
+  {
+    "category": "hot-drink",
+    "name": "Coffee",
+    "description": "Americano",
+    "price": {
+      "default": 500,
+      "dojoAdditional": 300
+    }
+  },
+  {
+    "category": "hot-drink",
+    "name": "Espresso",
+    "description": "",
+    "price": {
+      "default": 500,
+      "dojoAdditional": 300
+    }
+  },
+  {
+    "category": "hot-drink",
+    "name": "Black Tea",
+    "description": "Darjeeling or Earl Grey",
+    "price": {
+      "default": 500,
+      "dojoAdditional": 300
+    }
+  },
+  {
+    "category": "hot-drink",
+    "name": "Puer Tea",
+    "description": "",
+    "price": {
+      "default": 500,
+      "dojoAdditional": 300
+    }
+  },
+  {
+    "category": "hot-drink",
+    "name": "Jasmine Tea",
+    "description": "",
+    "price": {
+      "default": 500,
+      "dojoAdditional": 300
+    }
+  },
+  {
+    "category": "cold-drink",
+    "name": "Coke",
+    "description": "",
+    "price": {
+      "default": 500,
+      "dojoAdditional": 300
+    }
+  },
+  {
+    "category": "cold-drink",
+    "name": "Ginger Ale",
+    "description": "",
+    "price": {
+      "default": 500,
+      "dojoAdditional": 300
+    }
+  },
+  {
+    "category": "cold-drink",
+    "name": "Birelay's Orange",
+    "description": "",
+    "price": {
+      "default": 500,
+      "dojoAdditional": 300
+    }
+  },
+  {
+    "category": "cold-drink",
+    "name": "Wilkinson Tansan",
+    "description": "",
+    "price": {
+      "default": 500,
+      "dojoAdditional": 300
+    }
+  },
+  {
+    "category": "cold-drink",
+    "name": "Apple Cyder",
+    "description": "",
+    "price": {
+      "default": 500,
+      "dojoAdditional": 300
+    }
+  },
+  {
+    "category": "extra",
+    "name": "Latte",
+    "description": "",
+    "price": {
+      "default": 500
+    }
+  },
+  {
+    "category": "extra",
+    "name": "Iced Latte",
+    "description": "",
+    "price": {
+      "default": 500
+    }
+  },
+  {
+    "category": "extra",
+    "name": "Iced Espresso",
+    "description": "",
+    "price": {
+      "default": 500
+    }
+  }
+]
