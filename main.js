@@ -3184,7 +3184,7 @@ var riot$1 = extend({}, core, {
   util: util,
 });
 
-riot$1.tag2('app', '<section> <h2>Coworking</h2> <menu-item each="{data in coworking}" data="{data}"></menu-item> </section> <section> <h2>Hot Drinks</h2> <menu-item each="{data in hotDrinks}" data="{data}"></menu-item> </section> <section> <h2>Cold Drinks</h2> <menu-item each="{data in coldDrinks}" data="{data}"></menu-item> </section> <section> <h2>Extra</h2> <menu-item each="{data in extra}" data="{data}"></menu-item> </section>', 'app,[data-is="app"]{ display: block; background: rgba(55, 154, 174, 1.000); color: white; height: 100vh; font-size: 4vh; } app section,[data-is="app"] section{ position: relative; padding: 0 0 0 16vw; clear: both; } app section:not(:first-child),[data-is="app"] section:not(:first-child){ border-top: 4px solid white; } app menu-item,[data-is="app"] menu-item{ width: 42vw; height: 11vh; overflow: hidden; float: left; box-sizing: border-box; padding: 0 2em; margin: 0; } app h2,[data-is="app"] h2{ position: absolute; left: 0; width: 16vw; height: 100%; line-height: 11vh; margin: 0; padding: 0 1em; font-size: 80%; box-sizing: border-box; color: rgba(255,255,255,.8) }', '', function(opts) {
+riot$1.tag2('app', '<section> <h2>Coworking</h2> <menu-item each="{data in coworking}" data="{data}" size="large"></menu-item> </section> <section> <h2>Hot Drinks</h2> <menu-item each="{data in hotDrinks}" data="{data}"></menu-item> </section> <section> <h2>Cold Drinks</h2> <menu-item each="{data in coldDrinks}" data="{data}"></menu-item> </section> <section> <h2>Extra</h2> <menu-item each="{data in extra}" data="{data}"></menu-item> </section>', 'app,[data-is="app"]{ display: block; background: rgba(55, 154, 174, 1.000); color: white; height: 100vh; font-size: 4vh; } app section,[data-is="app"] section{ position: relative; padding: 0 0 0 16vw; clear: both; } app section:not(:first-child),[data-is="app"] section:not(:first-child){ border-top: 4px solid white; } app h2,[data-is="app"] h2{ position: absolute; left: 0; width: 16vw; height: 100%; line-height: 11vh; margin: 0; padding: 0 1em; font-size: 80%; box-sizing: border-box; color: rgba(255,255,255,.8) }', '', function(opts) {
     var this$1 = this;
 
     this.coworking = [];
@@ -3207,9 +3207,19 @@ riot$1.tag2('app', '<section> <h2>Coworking</h2> <menu-item each="{data in cowor
     }
 });
 
-riot$1.tag2('menu-item', '<h3>{opts.data.name}</h3> <p>{opts.data.description}</p> <span>&yen;{opts.data.price.default}</span>', 'menu-item,[data-is="menu-item"]{ display: block; position: relative; } menu-item h3,[data-is="menu-item"] h3{ margin: 0; line-height: 9vh; font-size: 100%; } menu-item p,[data-is="menu-item"] p{ position: absolute; line-height: 1em; bottom: .6em; margin: 0; font-size: 65%; color: rgba(255,255,255,.9) } menu-item span,[data-is="menu-item"] span{ position: absolute; right: 2em; bottom: 1em; font-size: 90%; color: rgba(255,255,255,.8) }', '', function(opts) {
+riot$1.tag2('menu-item', '<h3>{opts.data.name}</h3> <p>{opts.data.description}</p> <span>{numberFormat(opts.data.price.default)}</span>', 'menu-item,[data-is="menu-item"]{ display: block; position: relative; width: 42vw; overflow: hidden; float: left; box-sizing: border-box; padding: 0 2em; margin: 0; height: 11.5vh; } menu-item[size=large],[data-is="menu-item"][size=large]{ height: 16vh; } menu-item h3,[data-is="menu-item"] h3{ margin: 0; line-height: 10vh; font-size: 100%; } menu-item[size=large] h3,[data-is="menu-item"][size=large] h3{ line-height: 13vh; font-size: 140%; } menu-item p,[data-is="menu-item"] p{ position: absolute; line-height: 1em; bottom: .8em; margin: 0; font-size: 65%; color: rgba(255,255,255,.8) } menu-item[size=large] p,[data-is="menu-item"][size=large] p{ bottom: 1.2em; } menu-item span,[data-is="menu-item"] span{ position: absolute; right: 2em; bottom: 1.2em; font-size: 90%; color: rgba(255,255,255,.8) }', '', function(opts) {
+    this.numberFormat = function (n) {
+      return new Intl.NumberFormat('ja-JP', {
+        style: 'currency',
+        currency: 'JPY'
+      }).format(n)
+    };
 });
 
 riot$1.mount('app');
+
+// Reload every hour to get updates remotely
+var aHour = 1000 * 60 * 60;
+window.setTimeout(function () { return window.reload(); }, aHour);
 
 }());

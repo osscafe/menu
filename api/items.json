@@ -99,7 +99,7 @@
   },
   {
     "category": "cold-drink",
-    "name": "Apple Cyder",
+    "name": "Apple Cider",
     "description": "",
     "price": {
       "default": 500,
@@ -109,7 +109,7 @@
   {
     "category": "extra",
     "name": "Latte",
-    "description": "",
+    "description": "for members",
     "price": {
       "default": 500
     }
@@ -117,15 +117,7 @@
   {
     "category": "extra",
     "name": "Iced Latte",
-    "description": "",
-    "price": {
-      "default": 500
-    }
-  },
-  {
-    "category": "extra",
-    "name": "Iced Espresso",
-    "description": "",
+    "description": "for members",
     "price": {
       "default": 500
     }
