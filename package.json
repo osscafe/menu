@@ -5,6 +5,8 @@
   "private": true,
   "scripts": {
     "deploy": "npm run build && gh-pages -d dist",
+    "deploy-from-travis": "npm run build && npm run gh-pages-travis",
+    "gh-pages-travis": "gh-pages -d dist -r \"https://$GIT_TOKEN@github.com/osscafe/menu.git\"",
     "start": "npm run build; npm run watch & npm run server",
     "build": "npm run rsync && rollup -c",
     "rsync": "rsync -avu --exclude '*.tag' --exclude '*.js' src/ dist/",

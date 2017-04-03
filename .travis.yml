@@ -1,0 +1,11 @@
+language: node_js
+node_js:
+  - "6.*"
+branches:
+  only:
+    - master
+before_script:
+  - git config --global user.name "$GIT_NAME"
+  - git config --global user.email "$GIT_EMAIL"
+script:
+  - npm run deploy-from-travis
