@@ -1,7 +1,7 @@
 <app>
   <section>
     <h2>Coworking</h2>
-    <menu-item each={data in coworking} data={data} />
+    <menu-item each={data in coworking} data={data} size="large" />
   </section>
   <section>
     <h2>Hot Drinks</h2>
@@ -52,15 +52,6 @@
     }
     section:not(:first-child) {
       border-top: 4px solid white;
-    }
-    menu-item {
-      width: 42vw;
-      height: 11vh;
-      overflow: hidden;
-      float: left;
-      box-sizing: border-box;
-      padding: 0 2em;
-      margin: 0;
     }
     h2 {
       position: absolute;
